@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#3d2b1f"/>
+  
+  <!-- Flames -->
+  <path d="M100 20 C85 50, 55 60, 50 90 C45 120, 65 140, 75 135 C65 115, 70 95, 85 80 C80 100, 85 115, 90 120 C85 100, 90 80, 100 55 C110 80, 115 100, 110 120 C115 115, 120 100, 115 80 C130 95, 135 115, 125 135 C135 140, 155 120, 150 90 C145 60, 115 50, 100 20Z" fill="#e8451c" opacity="0.9"/>
+  <path d="M100 35 C90 55, 70 70, 65 90 C60 110, 75 125, 82 122 C75 110, 78 95, 88 82 C85 95, 88 108, 92 115 C90 100, 93 85, 100 65 C107 85, 110 100, 108 115 C112 108, 115 95, 112 82 C122 95, 125 110, 118 122 C125 125, 140 110, 135 90 C130 70, 110 55, 100 35Z" fill="#FF8C00" opacity="0.85"/>
+  
+  <!-- Crown -->
+  <path d="M85 72 L90 62 L95 70 L100 58 L105 70 L110 62 L115 72Z" fill="#FFD700"/>
+  
+  <!-- Burger bun top -->
+  <ellipse cx="100" cy="88" rx="30" ry="14" fill="#D4893F"/>
+  <ellipse cx="100" cy="85" rx="28" ry="10" fill="#E8A54D"/>
+  <!-- Sesame seeds -->
+  <ellipse cx="90" cy="82" rx="2" ry="1.5" fill="#FFF8DC" transform="rotate(-10 90 82)"/>
+  <ellipse cx="100" cy="80" rx="2" ry="1.5" fill="#FFF8DC"/>
+  <ellipse cx="108" cy="82" rx="2" ry="1.5" fill="#FFF8DC" transform="rotate(10 108 82)"/>
+  
+  <!-- Lettuce -->
+  <path d="M68 95 Q75 90, 82 95 Q89 90, 96 95 Q103 90, 110 95 Q117 90, 124 95 Q131 90, 135 95 L132 100 Q125 95, 118 100 Q111 95, 104 100 Q97 95, 90 100 Q83 95, 76 100 Q69 95, 66 100Z" fill="#4CAF50"/>
+  
+  <!-- Tomato -->
+  <rect x="70" y="98" width="60" height="6" rx="2" fill="#E53935"/>
+  
+  <!-- Patty -->
+  <rect x="68" y="104" width="64" height="10" rx="4" fill="#5D4037"/>
+  
+  <!-- Bun bottom -->
+  <ellipse cx="100" cy="120" rx="32" ry="8" fill="#D4893F"/>
+  
+  <!-- Text: EL -->
+  <text x="100" y="148" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#E8A54D" letter-spacing="2">EL</text>
+  
+  <!-- Text: BAJÓN -->
+  <text x="100" y="170" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="22" font-weight="900" fill="#e8451c" letter-spacing="1">BAJÓN</text>
+  
+  <!-- Text: NORTINO -->
+  <text x="100" y="187" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="12" font-weight="900" fill="#FF8C00" letter-spacing="4">NORTINO</text>
+</svg>

@@ -1,0 +1,104 @@
+/* ═══════════════════════════════════════
+   HEADER
+   ═══════════════════════════════════════ */
+
+.header {
+    position: relative;
+    text-align: center;
+    padding: var(--space-2xl) var(--space-lg) var(--space-xl);
+    overflow: hidden;
+}
+
+.header__bg {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg,
+            rgba(232, 69, 28, 0.15) 0%,
+            rgba(255, 140, 0, 0.08) 40%,
+            transparent 100%);
+    z-index: 0;
+}
+
+.header__bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to top, var(--bg-dark), transparent);
+}
+
+.header__content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.header__logo-ring {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto var(--space-md);
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--golden), var(--orange));
+    padding: 4px;
+    box-shadow: var(--shadow-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-full);
+}
+
+.header__title {
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 900;
+    color: var(--cream);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header__title--accent {
+    background: linear-gradient(135deg, var(--golden), var(--orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header__subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--golden);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: var(--space-xs);
+}
+
+.header__tagline {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: var(--space-sm);
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ─── Desktop ────────────────── */
+@media (min-width: 768px) {
+    .header {
+        padding: var(--space-2xl) var(--space-xl);
+    }
+
+    .header__logo-ring {
+        width: 120px;
+        height: 120px;
+    }
+}

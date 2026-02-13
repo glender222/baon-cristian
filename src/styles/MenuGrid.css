@@ -1,0 +1,28 @@
+/* ═══════════════════════════════════════
+   MENU GRID
+   ═══════════════════════════════════════ */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    padding: var(--space-lg) var(--space-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-lg);
+        padding: var(--space-xl);
+        max-width: 1100px;
+    }
+}
