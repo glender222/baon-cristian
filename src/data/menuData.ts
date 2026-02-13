@@ -5,7 +5,7 @@
 
 // 📱 NÚMERO DE WHATSAPP (con código de país, sin + ni espacios)
 // Ejemplo Chile: "56912345678"
-export const WHATSAPP_NUMBER = "56912345678";
+export const WHATSAPP_NUMBER = "56972290586";
 
 // 💬 Mensaje de saludo (se antepone al pedido)
 export const WHATSAPP_GREETING = "Hola El Bajón Nortino! Quiero hacer el siguiente pedido:";

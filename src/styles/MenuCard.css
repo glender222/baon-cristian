@@ -26,12 +26,18 @@
 .menu-card__img-wrap {
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    /* Fallback for browsers without aspect-ratio support (iOS < 15) */
+    height: 0;
+    padding-top: 75%;
+    /* 3/4 = 75% for 4:3 ratio */
     overflow: hidden;
     background: var(--brown-warm);
 }
 
 .menu-card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;

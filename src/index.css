@@ -85,7 +85,10 @@ body {
 body::before {
   content: '';
   position: fixed;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background:
     radial-gradient(ellipse at 20% 0%, rgba(255, 140, 0, 0.06) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 100%, rgba(232, 69, 28, 0.04) 0%, transparent 50%);
@@ -96,10 +99,16 @@ body::before {
 #root {
   position: relative;
   z-index: 1;
-  padding-bottom: 100px; /* space for cart bar */
+  padding-bottom: 100px;
+  /* space for cart bar */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   line-height: 1.2;
 }
@@ -121,9 +130,11 @@ img {
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-dark);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--brown-mid);
   border-radius: 3px;
@@ -135,6 +146,7 @@ img {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -142,8 +154,15 @@ img {
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 @keyframes slideUp {
@@ -151,6 +170,7 @@ img {
     opacity: 0;
     transform: translateY(100%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -158,6 +178,11 @@ img {
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
 }
